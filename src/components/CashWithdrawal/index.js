@@ -10,11 +10,11 @@ class CashWithdrawal extends Component {
   }
 
   updateBalance = value => {
-    this.setstate(prevState => ({balance: prevState.balance - value}))
+    this.setState(prevState => ({balance: prevState.balance - value}))
   }
 
   render() {
-    const {denomination} = this.props
+    const {denominationsList} = this.props
     const {balance} = this.state
     const name = 'Sarah Williams'
     const initial = name.slice(0, 1)
